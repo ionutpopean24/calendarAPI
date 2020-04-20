@@ -25,6 +25,6 @@ class RegisterTest extends TestCase
                     'updated_at',
                     'api_token',
                 ],
-            ]);;
+            ]);
     }
 }
