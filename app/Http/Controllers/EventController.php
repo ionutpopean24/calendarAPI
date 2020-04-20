@@ -48,7 +48,7 @@ class EventController extends Controller
             case DELETE_METHOD:
                 $event = Event::where('id', $requestParams->event_id);
                 $event->delete();
-                return response()->json(null, 204);
+                return response()->json("Event deleted", 204);
                 break;
             default:
                 return response()->json("Missing or wrong parameters", 400);
